@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+    <body>
+      <h1 id="title">Survey Form</h1>
+      <p id="description">You can fill out this form to let us know how we're doing.</p>
+      <form action="_blank" id="survey-form">
+      <fieldset>
+        <label id="name-label" class="first-labels">Please Enter Your Name:</label><input required id="name" name="name" type="text" placeholder=" Your Name..." />
+        <label id="email-label" class="first-labels">Please Enter Your Email:</label><input required id="email" type="email" name="email" placeholder=" Your Email..." />
+        <label id="number-label" class="first-labels">Please enter your age:</label><input class="number" id="number" type="number" min="16" max="115" name="age" placeholder=" Your Age" />
+      </fieldset>
+        <label class="question">How did you hear about us?</label>
+        <select id="dropdown">
+          <option>--Select One--</option>
+          <option>Social Media</option>
+          <option>Google Search</option>
+          <option>Online Advertising</option>
+          <option>Other</option>
+        </select>
+      <fieldset>
+          <label class="question">Would you reccomend us to a friend?</label>
+          <label class="answer" for="yes">Yes<input class="inline0" id="yes" type="radio" value="yes" name="group1" /></label>
+          <label class="answer" for="no">No<input class="inline0" id="no" type="radio" value="no" name="group1" /></label>
+          <fieldset>
+          <label class="question">What did you enjoy about your experience with us?</label>
+          <label for="1" class="answer2">Friendly Staff<input id="1" class="inline" type="checkbox" value="1" /></label>
+          <label for="2" class="answer2">Minimal Wait Time<input id="2" class="inline" type="checkbox" value="2" /></label>
+          <label for="3" class="answer2">Good Customer Service<input id="3" class="inline" type="checkbox" value="3" /></label>
+          <label for="4" class="answer2">Clean Facility<input id="4" class="inline" type="checkbox" value="4" /></label>
+          <label for="5" class="answer2">Fair Pricing<input id="5" class="inline" type="checkbox" value="5" /></label>
+          </fieldset>
+        <label class="question">If you have any other comments, concerns, or input, you can let us know here. Thank you!</label><textarea class="comments" placeholder="Concerns or input..."></textarea>
+      </fieldset>
+        <input type="submit" value="Submit" id="submit" />
+    </form>
+    </body>
+</html>
